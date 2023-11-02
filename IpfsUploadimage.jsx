@@ -14,12 +14,9 @@ initState({
       </div>
       <div className="mt-2">
         {state.img.cid && (
-          <img
-            src={`https://ipfs.near.social/ipfs/${state.img.cid}`}
-          />
-          <a href={ipfsUrl(state.file.cid)}>{state.file.cid}</a>
-
+          <a href={`https://ipfs.near.social/ipfs/${state.img.cid}`}>{state.img.cid}</a>
         )}
       </div>
     </div>
   );
+  
